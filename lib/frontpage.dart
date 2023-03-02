@@ -4,6 +4,7 @@ import 'package:kalkylanalys/homepage.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'logout.dart';
 import 'frontpage.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'orderpage.dart';
 import 'infopage.dart';
 
@@ -16,6 +17,7 @@ class FrontPage extends StatefulWidget {
 
 class _FrontPageState extends State<FrontPage> {
   bool isSubscribed = false;
+  bool isLoading = false;
 
   @override
   void initState() {
@@ -50,12 +52,12 @@ class _FrontPageState extends State<FrontPage> {
     return Scaffold(
       appBar: AppBar(
         title: Image.asset('assets/kma-logo-app.png'),
-        backgroundColor: Color.fromARGB(255, 8, 161, 125),
+        backgroundColor: Color.fromARGB(255, 220, 154, 12),
         centerTitle: true,
         elevation: 0,
       ),
       drawer: Drawer(
-          backgroundColor: Color.fromARGB(255, 8, 161, 125),
+          backgroundColor: Color.fromARGB(255, 220, 154, 12),
           child: ListView(
             padding: EdgeInsets.all(40),
             children: [
@@ -149,7 +151,7 @@ class _FrontPageState extends State<FrontPage> {
               ),
             ],
           )),
-      backgroundColor: const Color.fromARGB(255, 8, 161, 125),
+      backgroundColor: Color.fromARGB(255, 173, 122, 11),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -225,18 +227,20 @@ class _FrontPageState extends State<FrontPage> {
                   ),
                 ),
                 ElevatedButton(
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.4,
-                    child: const Text(
-                      "Prenumerera",
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
+                  child: isLoading
+                      ? CircularProgressIndicator(color: Colors.white)
+                      : Text("Prenumereraa"),
                   onPressed: () async {
+                    if (isLoading) return;
+                    setState(() => isLoading = true);
+
                     await Purchases.purchaseProduct('pren');
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 6, 197, 140),
+                    fixedSize: const Size.fromHeight(50),
+                    alignment: Alignment.center,
+                    backgroundColor: Color.fromARGB(255, 250, 187, 51),
+                    minimumSize: const Size(220, 50),
                   ),
                 ),
               ],

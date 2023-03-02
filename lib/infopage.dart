@@ -13,7 +13,7 @@ class _InfoPageState extends State<InfoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 8, 161, 125),
+      backgroundColor: Color.fromARGB(255, 220, 154, 12),
       appBar: AppBar(
         title: Image.asset('assets/kma-logo-app.png'),
         backgroundColor: const Color.fromARGB(255, 8, 161, 125),
@@ -32,7 +32,7 @@ class _InfoPageState extends State<InfoPage> {
                 text: 'Privacy policy',
                 style: const TextStyle(
                   decoration: TextDecoration.underline,
-                  color: Colors.blue,
+                  color: Color.fromARGB(255, 254, 254, 254),
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () async {
@@ -50,7 +50,7 @@ class _InfoPageState extends State<InfoPage> {
                 text: 'Terms of Use',
                 style: const TextStyle(
                   decoration: TextDecoration.underline,
-                  color: Colors.blue,
+                  color: Color.fromARGB(255, 255, 255, 255),
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () async {
