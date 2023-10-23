@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:kalkylanalys/ForgotPassword.dart';
 import 'authpage.dart';
 
 class LoginPage extends StatefulWidget {
@@ -43,7 +44,14 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _title() {
-    return const Text('Logga In');
+    return const Text(
+      'Logga In',
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+      ),
+    );
   }
 
   Widget _entryField(
@@ -52,49 +60,91 @@ class _LoginPageState extends State<LoginPage> {
   ) {
     return TextField(
       controller: controller,
+      obscureText: title == 'password', // Hide password
+      style: TextStyle(color: Colors.white), // Set text color to white
       decoration: InputDecoration(
         labelText: title,
+        labelStyle: TextStyle(color: Colors.white), // Set label color to white
+        focusedBorder: UnderlineInputBorder(
+          borderSide:
+              BorderSide(color: Colors.white), // Set underline color to white
+        ),
       ),
     );
   }
 
   Widget _errorMessage() {
-    return Text(errorMessage == '' ? '' : 'Hm ? $errorMessage');
+    return Text(
+      errorMessage == '' ? '' : 'Hm ? $errorMessage',
+      style: TextStyle(color: Colors.white), // Set text color to white
+    );
   }
 
   Widget _submitButton() {
     return ElevatedButton(
       onPressed:
           isLogin ? signInWithEmailAndPassword : createUserWithEmailAndPassword,
-      child: Text(isLogin ? 'Logga in' : 'Registrera'),
+      child: Text(
+        isLogin ? 'Logga in' : 'Registrera',
+        style: TextStyle(color: Colors.white), // Set text color to white
+      ),
+      style: ElevatedButton.styleFrom(
+        primary: Colors.orange, // Set button color to orange
+      ),
     );
   }
 
   Widget _loginOrRegistrationButton() {
-    return TextButton(
-      onPressed: () {
-        setState(() {
-          isLogin = !isLogin;
-        });
-      },
-      child: Text(isLogin ? 'Reigistrera' : 'Logga in'),
+    return Column(
+      children: [
+        TextButton(
+          onPressed: () {
+            setState(() {
+              isLogin = !isLogin;
+            });
+          },
+          child: Text(
+            isLogin ? 'Registrera' : 'Logga in',
+            style: TextStyle(color: Colors.white), // Set text color to white
+          ),
+        ),
+        TextButton(
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => ForgotPasswordPage(),
+              ),
+            );
+          },
+          child: Text(
+            'Glömt lösenord?',
+            style: TextStyle(
+                color: const Color.fromARGB(
+                    255, 255, 255, 255)), // Set text color to orange
+          ),
+        ),
+      ],
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.transparent,
       appBar: AppBar(
         elevation: 0,
-        title: Image.asset('assets/kma-logo-app.png'),
-        backgroundColor: Colors.transparent,
+        title: Image.asset('assets/sba-logo (2) (3).png'),
+        backgroundColor: Color.fromRGBO(0, 0, 0, 0),
       ),
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        padding: const EdgeInsets.all(20),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/Untitled-1.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -109,4 +159,4 @@ class _LoginPageState extends State<LoginPage> {
       ),
     );
   }
-}
+}*/

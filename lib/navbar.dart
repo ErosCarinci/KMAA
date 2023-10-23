@@ -1,13 +1,11 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+/*import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:kalkylanalys/FrontPage.dart';
-import 'widget.dart';
 import 'homepage.dart';
 import 'orderpage.dart';
 import 'infopage.dart';
 import 'logout.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'widget.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 class BNavBar extends StatefulWidget {
@@ -56,4 +54,4 @@ final screens = [
 
   
   }
-}
+}*/

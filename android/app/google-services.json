@@ -1,41 +1,40 @@
 {
   "project_info": {
-    "project_number": "277948496877",
-    "firebase_url": "https://kma-analys-a91b4-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "kma-analys-a91b4",
-    "storage_bucket": "kma-analys-a91b4.appspot.com"
+    "project_number": "5316507126",
+    "project_id": "kalkylanalys",
+    "storage_bucket": "kalkylanalys.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:277948496877:android:bec06a04c6ebf9de3b05e4",
+        "mobilesdk_app_id": "1:5316507126:android:225806f8f57d83677c43d7",
         "android_client_info": {
-          "package_name": "com.sfaholding.kmaanalys"
+          "package_name": "com.sfaholding.kalkylanalys"
         }
       },
       "oauth_client": [
         {
-          "client_id": "277948496877-ak4qj42id5t44iuaf4b1vbie3d88dbq1.apps.googleusercontent.com",
+          "client_id": "5316507126-gtroavd9st141g7mmc81u84dl2ln6rjb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBVnAM6c3QfneGVen4BPnpfIV5s6ICoYpU"
+          "current_key": "AIzaSyAOqpZbTjnJ_pLs1ir9NzyIXfFOPUFv3zM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "277948496877-ak4qj42id5t44iuaf4b1vbie3d88dbq1.apps.googleusercontent.com",
+              "client_id": "5316507126-8vk2peu67t1gf8sjt76u44osdd9o4la7.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "277948496877-1n93d0tfmo8vk3bprat57j93fdrcf774.apps.googleusercontent.com",
+              "client_id": "5316507126-393v15hl2lse0ciiooj5a5t8gpskpmhf.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.kmaanalys"
+                "bundle_id": "com.sfaholding.kmaanalys"
               }
             }
           ]

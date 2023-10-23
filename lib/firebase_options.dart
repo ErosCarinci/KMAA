@@ -44,44 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDV8bh9kwJoplLF18VjPClt94DMAjCf3gQ',
-    appId: '1:277948496877:web:3bfc57d48726f4603b05e4',
-    messagingSenderId: '277948496877',
-    projectId: 'kma-analys-a91b4',
-    authDomain: 'kma-analys-a91b4.firebaseapp.com',
-    databaseURL: 'https://kma-analys-a91b4-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'kma-analys-a91b4.appspot.com',
-    measurementId: 'G-74CS1KWPZ2',
+    apiKey: 'AIzaSyCONbGDmeBM0WvCfw4E4u8uGPwA_8d2m84',
+    appId: '1:5316507126:web:8582db862c67d6ce7c43d7',
+    messagingSenderId: '5316507126',
+    projectId: 'kalkylanalys',
+    authDomain: 'kalkylanalys.firebaseapp.com',
+    storageBucket: 'kalkylanalys.appspot.com',
+    measurementId: 'G-XS83SY6VKQ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBVnAM6c3QfneGVen4BPnpfIV5s6ICoYpU',
-    appId: '1:277948496877:android:bec06a04c6ebf9de3b05e4',
-    messagingSenderId: '277948496877',
-    projectId: 'kma-analys-a91b4',
-    databaseURL: 'https://kma-analys-a91b4-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'kma-analys-a91b4.appspot.com',
+    apiKey: 'AIzaSyAOqpZbTjnJ_pLs1ir9NzyIXfFOPUFv3zM',
+    appId: '1:5316507126:android:225806f8f57d83677c43d7',
+    messagingSenderId: '5316507126',
+    projectId: 'kalkylanalys',
+    storageBucket: 'kalkylanalys.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAjzjFbAOu-rTjgdqG7nSqAGRxyI127V7Q',
-    appId: '1:277948496877:ios:80bfe760427c81b43b05e4',
-    messagingSenderId: '277948496877',
-    projectId: 'kma-analys-a91b4',
-    databaseURL: 'https://kma-analys-a91b4-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'kma-analys-a91b4.appspot.com',
-    iosClientId: '277948496877-44bugu9lpqm19iorm0c1fpv5cou1iqjc.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAbsw43Xld2Em3yGqE4v9t957xuW0-oWus',
+    appId: '1:5316507126:ios:80e6594baa3b82317c43d7',
+    messagingSenderId: '5316507126',
+    projectId: 'kalkylanalys',
+    storageBucket: 'kalkylanalys.appspot.com',
+    iosClientId: '5316507126-393v15hl2lse0ciiooj5a5t8gpskpmhf.apps.googleusercontent.com',
     iosBundleId: 'com.sfaholding.kmaanalys',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAjzjFbAOu-rTjgdqG7nSqAGRxyI127V7Q',
-    appId: '1:277948496877:ios:80bfe760427c81b43b05e4',
-    messagingSenderId: '277948496877',
-    projectId: 'kma-analys-a91b4',
-    databaseURL: 'https://kma-analys-a91b4-default-rtdb.europe-west1.firebasedatabase.app',
-    storageBucket: 'kma-analys-a91b4.appspot.com',
-    iosClientId: '277948496877-44bugu9lpqm19iorm0c1fpv5cou1iqjc.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAbsw43Xld2Em3yGqE4v9t957xuW0-oWus',
+    appId: '1:5316507126:ios:80e6594baa3b82317c43d7',
+    messagingSenderId: '5316507126',
+    projectId: 'kalkylanalys',
+    storageBucket: 'kalkylanalys.appspot.com',
+    iosClientId: '5316507126-393v15hl2lse0ciiooj5a5t8gpskpmhf.apps.googleusercontent.com',
     iosBundleId: 'com.sfaholding.kmaanalys',
   );
 }
